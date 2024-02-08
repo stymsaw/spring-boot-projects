@@ -1,7 +1,9 @@
 package stym.springboot.jpaandhibernate.course.jdbc;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import stym.springboot.jpaandhibernate.course.Course;
 
@@ -17,6 +19,9 @@ public class JdbcRepository {
     private static String DELETE_QUERY = """
                                 delete from course where id  = ?
             """;
+    private static String SELECT_QUERY = """
+                                select * from course where id  = ?
+            """;
 
     public void insert(Course course) {
         springJdbcTemplate.update(INSET_QUERY, course.getId(), course.getName(), course.getAuthor());
@@ -24,5 +29,9 @@ public class JdbcRepository {
 
     public void deleteCourseById(long id) {
         springJdbcTemplate.update(DELETE_QUERY, id);
+    }
+
+    public Course findById(long id) {
+        return springJdbcTemplate.queryForObject(SELECT_QUERY, new BeanPropertyRowMapper<>(Course.class), id);
     }
 }
