@@ -3,6 +3,6 @@
     <title> Login Page</title>
 </head>
 <body>
-Login - JSP
+Login - JSP ${name}
 </body>
 </html>
