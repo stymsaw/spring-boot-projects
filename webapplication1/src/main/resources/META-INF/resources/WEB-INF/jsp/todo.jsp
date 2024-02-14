@@ -3,7 +3,7 @@
 <html>
 <head>
     <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" >
-    <title>Add Todo Page</title>
+    <title>Create Todo Page</title>
 </head>
 <body>
 <div class="container">
@@ -11,7 +11,6 @@
     <form method="post">
         Description: <input type="text" name="description"/>
         <input type="submit" class="btn btn-success"/>
-
     </form>
 
 </div>
