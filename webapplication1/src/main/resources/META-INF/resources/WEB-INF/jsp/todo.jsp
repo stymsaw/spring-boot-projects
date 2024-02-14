@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Enter Todo Details</h1>
+    <h1>Enter Todo Details (Create new todo)</h1>
     <form method="post">
         Description: <input type="text" name="description"/>
         <input type="submit" class="btn btn-success"/>
