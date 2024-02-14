@@ -1,7 +1,5 @@
 <html>
 <title>Login Page</title>
-Welcome to the Welcome!
-
 <body>
 <div class="container">
     <h1>Welcome ${name}</h1>
