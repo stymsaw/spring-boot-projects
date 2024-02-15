@@ -9,10 +9,13 @@
 <body>
 <div class="container">
     <h1>Enter Todo Details (Create new todo)</h1>
-    <form method="post">
-        Description: <input type="text" name="description"/>
-        <input type="submit" class="btn btn-success"/>
-    </form>
+
+    <form:form method="post" modelAttribute="todo">
+        Description: <form:input type="text" path="description"
+                                 required="required"/>
+        <form:input type="hidden" path="id"/>
+        <form:input type="hidden" path="done"/>
+    </form:form>
 
 </div>
 <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
