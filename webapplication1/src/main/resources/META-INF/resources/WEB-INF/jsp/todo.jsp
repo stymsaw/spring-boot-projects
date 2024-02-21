@@ -4,7 +4,7 @@
 <html>
 <head>
     <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" >
-    <title>Create Todo Page</title>
+    <title>Create Todo</title>
 </head>
 <body>
 <div class="container">
