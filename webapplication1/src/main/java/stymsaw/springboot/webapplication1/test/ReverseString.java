@@ -5,7 +5,7 @@ public class ReverseString {
 
     public static void main(String[] args) {
 
-        String demo = "stym @ 123";
+        String demo = "stym";
 
         StringBuilder revStr = new StringBuilder();
 
