@@ -5,15 +5,15 @@ public class ReverseString {
 
     public static void main(String[] args) {
 
-        String demo = "qwerty";
+        String str = "qwerty";
 
         StringBuilder revStr = new StringBuilder();
 
-        while (!demo.isEmpty()) {
-            int len = demo.length();
-            char c = demo.charAt(len - 1);
+        while (!str.isEmpty()) {
+            int len = str.length();
+            char c = str.charAt(len - 1);
             revStr.append(c);
-            demo = demo.substring(0,len - 1);
+            str = str.substring(0,len - 1);
         }
 
         System.out.println(revStr);
