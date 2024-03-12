@@ -1,4 +1,4 @@
-# spring-boot-projects
+# spring-boot-project
 # spring-boot-projects hibernate 
 
 
